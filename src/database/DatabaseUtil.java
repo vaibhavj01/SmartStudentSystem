@@ -1,0 +1,26 @@
+package database;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DatabaseUtil  {
+
+	private static final String url ="jdbc:mysql://localhost:3306/smartstudents";
+	private static final String userName ="root";
+	private static final String password="1234";
+	
+	public static Connection getConnection() {
+		Connection connection = null;
+				
+				try {
+					connection=DriverManager.getConnection(url,userName,password);
+					System.out.println("Database connected successfully!");
+				}catch (SQLException e) {
+					System.out.println("Database connection id Failed !!");
+					e.printStackTrace();
+				}
+				return connection;
+	}
+	
+}
