@@ -13,11 +13,6 @@ Smart Student Management System is a Java-based console application developed us
 * Update Student Information
 * Delete Student
 * Search Students:
-
-  * By Roll Number
-  * By Name
-  * By Department
-  * By Marks (Filter)
 * Course Management
 * Enrollment Management
 
@@ -54,13 +49,12 @@ CREATE DATABASE smartstudent;
 USE smartstudent;
 
 CREATE TABLE student (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    roll_no INT UNIQUE,
+    id INT AUTO_INCREMENT PRIMARY KEY, 
     name VARCHAR(100),
     email VARCHAR(100),
     phone VARCHAR(15),
-    department VARCHAR(100),
-    marks DOUBLE
+    
+   
 );
 
 CREATE TABLE course (
@@ -94,7 +88,6 @@ CREATE TABLE enrollment (
 
 ## 📸 Screenshots
 
-(Add your screenshots here)
 
 ---
 
