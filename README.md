@@ -85,12 +85,6 @@ CREATE TABLE enrollment (
 4. Run `Main.java`
 
 ---
-
-## 📸 Screenshots
-
-
----
-
 ## 👨‍💻 Author
 
 Vaibhav Jondhale
